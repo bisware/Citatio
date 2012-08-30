@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Citatio</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Citatio</string>
+    <string name="set_original">Originale</string>
+    <string name="set_grey">Grigio</string>
+    <string name="set_obfuscation">Offusca</string>
+    <string name="set_radial">Radiale</string>
+
+</resources>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Immagine da renderizzare"
+        android:src="@drawable/ic_action_search" />
+
+    <Button
+        android:id="@+id/btnSetGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/set_grey" />
+
+    <Button
+        android:id="@+id/btnSetObfuscation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/btnSetGrey"
+        android:text="@string/set_obfuscation" />
+
+    <Button
+        android:id="@+id/btnSetRadial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/btnSetObfuscation"
+        android:text="@string/set_radial" />
+
+    <Button
+        android:id="@+id/btnSetOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/set_original" />
+
+    <SeekBar
+        android:id="@+id/seekBarZoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSetGrey"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/textViewSpot"
+        android:max="100"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/textViewRadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/seekBarRadius"
+        android:minWidth="20dp" 
+        android:text="50" />
+
+    <SeekBar
+        android:id="@+id/seekBarRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBarZoom"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/textViewRadius"
+        android:max="800"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textViewSpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/seekBarZoom"
+        android:minWidth="20dp"
+        android:text="50" />
+
+    <Button
+        android:id="@+id/txtFrase"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Frase" />
+
+</RelativeLayout>
